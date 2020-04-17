@@ -6,7 +6,7 @@ use std::path::PathBuf;
 fn main() {
     // Tell cargo to tell rustc to link the system opensc
     // shared library.
-    println!("cargo:rustc-link-lib=opensc");
+    println!("cargo:rustc-link-lib=dylib=opensc");
 
     // Tell cargo to invalidate the built crate whenever the wrapper changes
     println!("cargo:rerun-if-changed=wrapper.h");
