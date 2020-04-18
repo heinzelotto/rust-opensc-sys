@@ -9,10 +9,9 @@ readme = "README.md"
 categories = ["external-ffi-bindings"]
 edition = "2018"
 
-include = [
-    "*",
-    "src/**",
-    "OpenSC/src/**",
+exclude = [
+    "OpenSC/**",
+    "!OpenSC/src/**",
 ]
 
 [dependencies]
