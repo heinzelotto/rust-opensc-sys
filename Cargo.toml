@@ -1,13 +1,19 @@
 [package]
 name = "opensc-sys"
-version = "0.20.0"
+version = "0.1.0"
 authors = ["Felix Monninger <felix.monninger@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "FFI bindings to OpenSC"
 repository = "https://github.com/heinzelotto/rust-opensc-sys"
-readme = "README.org"
+readme = "README.md"
 categories = ["external-ffi-bindings"]
 edition = "2018"
+
+include = [
+    "*",
+    "src/**",
+    "OpenSC/src/**",
+]
 
 [dependencies]
 
