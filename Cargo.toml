@@ -1,6 +1,6 @@
 [package]
 name = "opensc-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Felix Monninger <felix.monninger@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "FFI bindings to OpenSC"
