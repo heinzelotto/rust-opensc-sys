@@ -14,6 +14,15 @@ exclude = [
     "!OpenSC/src/**",
 ]
 
+[features]
+default = ["enable_openssl", "enable_sm"]
+
+# define the ENABLE_SM flag in the c headers. This makes secure messaging functions available.
+enable_sm = ["enable_openssl"]
+
+# define the ENABLE_OPENSSL flag in the c headers. OpenSSL must be present on the system.
+enable_openssl = []
+
 [dependencies]
 
 [build-dependencies]

@@ -9,6 +9,8 @@ These are unsafe FFI Wrappers created by bindgen, please take a look at the safe
 
 The OpenSC shared library must be installed on you system to build the crate and run the resulting binary.
 
+By default the optional features `openssl` for OpenSSL support and `sm` for a Secure Messaging implementation are enabled.
+
 Since OpenSC is included as a git submodule, when cloning run `git clone --recursive https://github.com/heinzelotto/rust-opensc-sys` to retrieve the submodule as well.
 
 # Licensing
